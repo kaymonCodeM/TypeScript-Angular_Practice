@@ -65,15 +65,16 @@
 
 // }
 
-class genericnumber<T>{
-    num: T|undefined;
-    add: ((x:T,y:T) => T) | undefined;
-}
+// class genericnumber<T>{
+//     num: T|undefined;
+//     add: ((x:T,y:T) => T) | undefined;
+// }
 
-let letgenricnumber = new genericnumber<number>();
-letgenricnumber.num =0;
-letgenricnumber.add = function(x,y){
-    return x + y;
-};
+// let letgenricnumber = new genericnumber<number>();
+// letgenricnumber.num =0;
+// letgenricnumber.add = function(x,y){
+//     return x + y;
+// };
 
-console.log(letgenricnumber.add(45,32));
+// console.log(letgenricnumber.add(45,32));
+
