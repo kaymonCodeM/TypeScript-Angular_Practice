@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DemoComponent } from './demo.component';
+import { DemoService } from './demo.service';
 import { Demo2Component } from './demo2/demo2.component';
 import { FormComponent } from './form/form.component';
 
@@ -16,7 +17,9 @@ import { FormComponent } from './form/form.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    DemoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

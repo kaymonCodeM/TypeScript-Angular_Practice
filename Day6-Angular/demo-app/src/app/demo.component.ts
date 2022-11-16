@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { DemoService } from "./demo.service";
 
 @Component({
     selector: 'demo',
@@ -12,5 +13,10 @@ import { Component } from "@angular/core";
 
 export class DemoComponent {
     title = "Application";
-    demoarray = ["array1","array2","array3"];
+    demoarray;
+
+    constructor(arrayservice: DemoService){
+        //let arrayservice = new DemoService();
+        this.demoarray= arrayservice.getArrayElements();
+    }
 }
