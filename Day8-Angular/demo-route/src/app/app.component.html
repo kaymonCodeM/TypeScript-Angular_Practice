@@ -4,4 +4,16 @@
 <br>
 <a routerLink="Admin">Admin</a>
 
+<h2>{{title}}</h2>
+
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+  <input type="text" placeholder="Enter Name" formControlName="user">
+  <br>
+  <span *ngIf = "user?.invalid && user?.touched">user name is required !!</span>
+  <br>
+  <input type="password" placeholder="Enter Password" formControlName="password">
+  <br> <br>
+  <button>Login</button>
+</form>
+
 <router-outlet></router-outlet>
