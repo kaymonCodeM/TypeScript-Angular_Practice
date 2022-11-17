@@ -1,20 +1,36 @@
-form{
-    box-shadow: .2rem .2rem 1rem 0rem #EEE;
-    border-radius: 1rem;
-    padding: 1.5rem;
+form {
+  box-shadow: .2rem .2rem 1rem 0rem #EEE;
+  border-radius: 1rem;
+  padding: 1.5rem;
 }
 
 button {
-    background-color: #0897B4;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: .3rem;
-    font-size: 1.2rem;
-    transition-duration: .3s;
-    transition-timing-function: ease-in;
-  }
+  background-color: #0897B4;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: .3rem;
+  font-size: 1.2rem;
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
+}
 
-  button:hover{
-    background-color: #1B7F7A;
-  }
+button:hover {
+  background-color: #1B7F7A;
+}
+
+input.ng-touched.ng-invalid {
+  border: 2px solid red;
+}
+
+input.ng-touched.ng-valid {
+  border: 2px solid green;
+}
+
+select.ng-touched.ng-invalid{
+  border: 2px solid red;
+}
+
+select.ng-touched.ng-valid {
+  border: 2px solid green;
+}
